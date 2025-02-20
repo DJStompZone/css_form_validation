@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC>
+<html lang="en" charset="UTF-8">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/props.css" type="text/css">
+    <link rel="stylesheet" href="/norml.css" type="text/css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+
+</head>
+
+<body>
+    <form action="">
+        <div class="form-group">
+            <label for="email" class="form-label">
+                <span aria-hidden="true" class="label__letter" style="--index: 0;">E</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 1;">m</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 2;">a</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 3;">i</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 4;">l</span>
+                <span class="sr-only">Email</span>
+            </label>
+            <input required type="email" id="email" class="form-input"
+                pattern="^(?=[A-Z0-9][A-Z0-9@._%+-]{5,253}$)(?!.*\.\.)([A-Z0-9._%+-]{1,63}[A-Z0-9])@(?:(?=[A-Z0-9-]{1,63}\.)(?!.*\.\.)[A-Z0-9]+(?:-[A-Z0-9]+)*\.){1,8}[A-Z]{2,63}$"
+                title="Enter a valid email address" placeholder="Enter valid email address" />
+
+        </div>
+        <div class="form-group pwd">
+            <label for="password" class="form-label">
+                <span aria-hidden="true" class="label__letter" style="--index: 0;">P</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 1;">a</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 2;">s</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 3;">s</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 4;">w</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 5;">o</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 6;">r</span>
+                <span aria-hidden="true" class="label__letter" style="--index: 7;">d</span>
+                <span class="sr-only">Password</span>
+            </label>
+            <input required type="password" id="password" class="form-input"
+                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                title="Password must be at least 8 characters and sufficiently complex." placeholder="Enter password" />
+
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="footer">©2025 DJ Stomp, "No Rights Reserved"</div>
+</body>
+
+</html>
